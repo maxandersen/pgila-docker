@@ -6,7 +6,7 @@ ENV POSTGRES_USER sakila
 ENV POSTGRES_PASSWORD sakila
 
 #COPY *.sh /docker-entrypoint-initdb.d/
-COPY pagile/*.sql /docker-entrypoint-initdb.d/dump/
+COPY pagila/*.sql /docker-entrypoint-initdb.d/dump/
 
 EXPOSE 5432
 CMD ["postgres"]
